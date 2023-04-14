@@ -1,0 +1,190 @@
+.main {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.heroColumn {
+  float: left;
+  width: 50%;
+  height: 600px;
+  padding: 10px 0px;
+  
+}
+
+.hero {
+  margin: 0 90px;
+}
+
+.hero:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heroCard {
+  padding: 12px;
+  
+  background-color: white;
+}
+
+
+.heroImg {
+  width: auto;
+  height: 500px;
+  margin: auto;
+}
+
+.heroLeft {
+  margin: 70px 0;
+  text-align: left;
+}
+
+.heroLeft p{
+    font-size: 14px;
+}
+
+.heroLeft h1{
+    font-size: 46px;
+}
+
+.heroBtn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 110px;
+}
+
+@media screen and (max-width: 900px) {
+    
+
+    .hero {
+        margin: 0 20px;
+      }
+      .heroLeft h1{
+        font-size: 26px;
+    }
+
+    .heroImg {
+        width: auto;
+        height: 400px;
+      }
+
+      .heroBtn {
+        height: 90px;
+    }
+  }
+
+
+
+@media screen and (max-width: 600px) {
+    .heroColumn {
+      width: 100%;
+      display: block;
+      margin-bottom: 0px;
+      height: unset;
+      padding: 5px 0px;
+    }
+
+    .hero {
+        margin: 0 10px;
+      }
+
+      .heroImg {
+        width: 100%;
+        height: unset;
+      }
+
+      .bgHeroImg {
+        background-image: url(../../assets/Fine.png);
+      }
+
+      .heroHidden {
+        display: none;
+      }
+      .heroBtn {
+        height: 150px;
+    }
+
+    .heroLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+      }
+
+
+  }
+
+
+
+  /*features page starts here*/
+
+  .features {
+    padding: 10px;
+    
+  }
+
+  .featuresSwiper {
+    background-image: url(../../assets/swiper.jpeg);
+    height: 500px;
+    width: 800px;
+    padding: 50px 70px;
+  }
+
+  .featuresSwiper h1{
+    font-size: 36px;
+  }
+  .swiper{
+    height: 500px;
+    width: 800px;
+    overflow: visible;
+    
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #fff !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: orange !important;
+  }
+
+  .swiper-button-next:after{
+  color: orange ;
+    opacity: 1;
+  }
+
+  .swiper-button-prev:after{
+    color: orange ;
+      opacity: 1;
+    }
+
+  @media screen and (max-width: 600px) {
+
+    .swiper{
+        height: 500px;
+        width: 400px;
+        overflow: visible;
+      }
+      .featuresSwiper {
+        height: 500px;
+        width: 400px;
+        padding: 50px 70px;
+      }
+    
+  }
+
+  

@@ -1,24 +1,18 @@
 import React from "react";
-import { Router, Routes, Route, Link } from "react-router-dom";
-import Navbar from "./navbarCard/Navbar";
-import Footer from "./footerCard/Footer";
+import { Routes, Route, Link } from "react-router-dom";
+import Login from "./authCard/Login";
+import Signup from "./authCard/Signup";
 import Main from "./mainCard/Main";
-import AboutUs from "./aboutUs/AboutUs";
 
 const EatProject = () => {
   return (
-   <>
-      <div>
-        <Navbar />
-      </div>
+    <>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="AboutUs" element={<AboutUs />} />
-
+        <Route path="AboutUs" element={<Main />} />
+        <Route path="Login" element={<Login />} />
+        <Route path="Signup" element={<Signup />} />
       </Routes>
-      <div>
-        <Footer />
-      </div>
     </>
   );
 };

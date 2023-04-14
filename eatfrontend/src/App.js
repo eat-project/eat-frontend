@@ -1,10 +1,12 @@
-import './App.css';
-import EatProject from './components';
+import "./App.css";
+import "./molecules/btn/Btn.css"
+import "./molecules/texts.css"
+import EatProject from "./components";
 
 function App() {
   return (
     <div className="App">
-     <EatProject />
+      <EatProject />
     </div>
   );
 }
